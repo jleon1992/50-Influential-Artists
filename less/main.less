@@ -1,5 +1,36 @@
+.title-container{
+    position: relative;
+    img{
+        margin: 10%;
+        .flex(center, center);
+        
+    }
+    .centered{
+        position: absolute;
+        .flex(center, center);
+        flex-direction: column;
+        h1{
+        width: 100%;
+        .font(3rem, @font);
+        // font-weight: bolder;
+        color: white;
+        text-align: center
+        }
+        button{
+            .btn(50%, 3%);
+            .flex(center, center);
+            // margin: 10%;
+            .font(1rem, @font)
+        }
+        
+    }
 
-button{
-    .btn(20%, 2%);
-    .flex(center, center)
+    .flex(center, center);
+    .font(3rem, @font);
+    font-weight: bolder;
+    color: red;
+    flex-direction: column;
+    
+
+    
 }

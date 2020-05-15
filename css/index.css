@@ -86,6 +86,20 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
 header {
   display: flex;
   justify-content: center;
@@ -115,10 +129,47 @@ header nav a {
 header nav a:last-child {
   border: none;
 }
-button {
-  width: 20%;
-  padding: 2%;
+.title-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  color: red;
+  flex-direction: column;
+}
+.title-container img {
+  margin: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-container .centered {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-container .centered h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
+}
+.title-container .centered button {
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+.wrap {
+  width: 80%;
+  margin: auto;
 }

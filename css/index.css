@@ -137,11 +137,10 @@ header nav a:last-child {
   font-size: 3rem;
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
-  color: red;
   flex-direction: column;
 }
 .title-container img {
-  margin: 10%;
+  margin: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +167,43 @@ header nav a:last-child {
   align-items: center;
   font-size: 1rem;
   font-family: 'Raleway', sans-serif;
+}
+.line-break {
+  border: 2px solid grey;
+}
+.artists-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.artists-container .artist {
+  width: 50%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.artists-container .artist img {
+  width: 90%;
+  height: 500px;
+  border-radius: 7%;
+}
+.artists-container .artist a {
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 2%;
+}
+.artists-container .artist .bio {
+  width: 80%;
+}
+.artists-container .artist .bio p {
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: bold;
 }
 .wrap {
   width: 80%;

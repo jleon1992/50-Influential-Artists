@@ -1,0 +1,35 @@
+header{
+    .flex(center, center);
+    nav{
+        display: flex;
+        width: 30%;
+        margin-top: 5%;
+        @media(@mobile){
+            width: 80%;
+        }
+        a:first-child{
+         
+            font-weight: bold;
+        }
+        a{
+            .flex(center, center);
+            .font(2rem, @font);
+            text-decoration: none;
+            color: black;
+            width: 25%;
+            padding: 2%;
+            margin: 2%;
+            border-right: 2px solid black;
+            @media(@mobile){
+                width: 25%;
+            }
+   
+        }
+        a:last-child{
+            border: none;
+        }
+       
+        
+      
+    }
+}

@@ -97,7 +97,7 @@ img {
 }
 .container {
   max-width: 800px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 header {
@@ -107,10 +107,13 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
+  width: 30%;
   margin-top: 5%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+  }
 }
 header nav a:first-child {
   font-weight: bold;
@@ -123,11 +126,27 @@ header nav a {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: black;
-  width: 40%;
+  width: 25%;
+  padding: 2%;
+  margin: 2%;
   border-right: 2px solid black;
+}
+@media (max-width: 500px) {
+  header nav a {
+    width: 25%;
+  }
 }
 header nav a:last-child {
   border: none;
+}
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .wrap {
+    width: 100%;
+  }
 }
 .title-container {
   position: relative;
@@ -176,6 +195,16 @@ header nav a:last-child {
   justify-content: space-around;
   align-items: flex-start;
 }
+@media (max-width: 500px) {
+  .artists-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+}
 .artists-container .artist {
   width: 50%;
   padding: 2%;
@@ -184,10 +213,21 @@ header nav a:last-child {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .artists-container .artist {
+    width: 100%;
+  }
+}
 .artists-container .artist img {
   width: 90%;
   height: 500px;
   border-radius: 7%;
+}
+@media (max-width: 500px) {
+  .artists-container .artist img {
+    height: 100%;
+    width: 50%;
+  }
 }
 .artists-container .artist a {
   font-size: 1.5rem;
@@ -195,6 +235,12 @@ header nav a:last-child {
   text-decoration: none;
   color: black;
   padding: 2%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .artists-container .artist a {
+    padding: 5%;
+  }
 }
 .artists-container .artist .bio {
   width: 80%;
@@ -204,8 +250,4 @@ header nav a:last-child {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-weight: bold;
-}
-.wrap {
-  width: 80%;
-  margin: auto;
 }
